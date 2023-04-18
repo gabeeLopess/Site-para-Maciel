@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maciel Sell Produtos</title>
+    <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="shortcut icon" href="./img/m-icon.ico">
+
+   </head>
+<body>
+
+    <header>
+      <div class="content">
+        <nav>
+          <p class="brand">Maciel<strong>Sell</strong></p>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li id="produs"><a class="active" href="produtosjs.html">Produtos</a>
+            </li>
+            <li><a href="quero-vender.html">Quero Vender</a></li>
+          </ul>
+        </nav>
+        
+       
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Nome do Produto..."
+        />
+        <button type="submit" value="Pesquisar" id="search">Pesquisar</button>
+      </div>
+      <ul>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">Todos</button>
+          <button class="button-value" onclick="filterProduct('Mouse')">
+            Mouse
+          </button>
+          <button class="button-value" onclick="filterProduct('Teclado')">
+            Teclado
+          </button>
+          <button class="button-value" onclick="filterProduct('Novos')">
+            Novos
+          </button>
+          <button class="button-value" onclick="filterProduct('Usados')">
+            Usados
+          </button>
+        </div>
+        
+      </ul>
+      
+    
+      <div id="products"></div>
+
+    </div>
+      </div>
+    
+      <footer>
+        <div class="container-footer">
+  
+          <div>
+              <a href="https://api.whatsapp.com/send?phone=554793300431&text=Ol%C3%A1%20Estou%20Interessado%20em%20Seus%20Produtos">
+              <img id="logo-footer" src="./img/Equie-logo.svg"></a>
+          </div>
+          
+          <div id="texto-final2"><p>&copy; <strong>Maciel Sell.</strong> Todos os direitos reservados.
+              <small>Desenvolvido por: Samuel Ruske Ferrareis e Gabriel Lopes</small></p>
+          </div>
+  
+          <div>
+              <a href="https://api.whatsapp.com/send?phone=554793300431&text=Ol%C3%A1%20Estou%20Interessado%20em%20Seus%20Produtos">
+              <img id="logo-whats" src="./img/zap-2.jpeg"></a>
+          </div>
+  
+          <div id="informacao"> 
+              <p>Contato: (47) 93300-4341</p></div>
+  
+           <div><a href="https://www.google.com.br/maps/place/R.+Irregular+34,+Jaragu%C3%A1+do+Sul+-+SC/@-26.3687088,-49.1184178,17z/data=!3m1!4b1!4m5!3m4!1s0x94de99fbfa10ce1f:0xf58169480623a92!8m2!3d-26.3687136!4d-49.1162291"><img id="mapa" src="./img/Maps-icon.png"></a></div>
+  
+           <div id="div-final"><p> Rua Irregular 34 Santa Luzia - Jaraguá do Sul - Santa Catarina</p></div>
+  
+      </div>
+      </footer>
+    </header> 
+    
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

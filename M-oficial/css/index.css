@@ -1,0 +1,748 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+/* reseting css rules */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --orange: #5434af;
+  --blue: #00285f;
+  --gray: #ededed;
+  --fundo: rgb(218, 0, 44);
+  --hover: rgb(105, 105, 105);
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background: var(--orange);
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 28px;
+  color: var(--gray);
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--gray);
+  font-size:1em;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  background-color:#ffef00;
+  color:#393939;
+  transition:.6s;
+  font-weight: 490;
+}
+
+a.active, a:hover {
+  background-color:#ffef00;
+  color:#393939;
+  transition:.6s;
+  font-weight: 490;
+}
+
+/* HEADER INFERIOR */
+
+.content .header-block {
+  width: 100%;
+  height: 450px;
+  background: var(--orange);
+  border-radius: 8px;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+}
+
+.header-block img {
+  width: 50%;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+}
+
+.header-block .text {
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+}
+
+.header-block .text h2 {
+  color: white;
+  margin-bottom: 30px;
+  text-align: right;
+  transform: translateX(-20px);
+  transition: transform 0.5s;
+}
+
+.header-block .text p {
+  max-width: 290px;
+  color: white;
+  text-align: right;
+  transform: translateX(-20px);
+  transition: transform 0.4s;
+}
+
+/* Product Catalog */
+
+
+
+.title-wrapper-catalog {
+  margin-top: 200px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.global-page-container {
+	width: 100%;
+	display: inline-block;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.watch-slider {
+  padding: 80px 0 60px 0;
+  overflow: hidden;
+
+}
+
+.watch-slider .slide {
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+.watch-slider .slide.slick-center {
+  transform: scale(1);
+}
+
+.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: center;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#arrow-prev {
+  background-image: url('../img/arrow_prev.svg');
+}
+
+#arrow-next {
+  background-image: url('../img/arrow_next.svg');
+}
+
+.description {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  vertical-align: middle;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #3a3a3a;
+  font-size: 18px;
+
+}
+
+#watch-price {
+  color: #ff5722;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #5434af;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 40px;
+  column-count: 3;
+  
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+footer small {
+  font-size: 80%;
+  display: block;
+}
+
+#logo-footer {
+  float: left;
+  width: 50px;
+  height: auto;
+
+}
+
+#logo-whats {
+  width: 30px;
+  height: auto;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+#texto-final2 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#informacao {
+ float: left;
+ margin-top: 18px;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+#mapa {
+  width: 35px;
+  height: auto;
+  float: right;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+#div-final {
+  float: right;
+  margin-top: 10px;
+}
+
+/* Responsiva */
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+  .watch-slider .slide {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width:1919px){
+  .header-block img {
+    width: 36%;
+    right: 3%;
+    bottom: 8%;
+  }
+  .header-block .text h2 {
+    margin-bottom: 120px;
+    font-size: 32px;
+  }
+  .header-block .text {
+    bottom: 25%;
+  }
+  .header-block .text p {
+    max-width: 670px;
+    font-size: 22px;
+  }
+  .brand {
+    font-size: 40px;
+    margin-left: 120px;
+  }
+  nav ul li a {
+    font-size: 17px;
+    padding: 10px 30px;
+  }
+  nav ul {
+    margin-right: 100px;
+  }
+  #texto-p {
+    font-size: 18px;
+  }
+  #tema-h2 {
+    font-size: 23px;
+  }
+  .description {
+    width: 340px;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  footer p {
+    font-size: 19px;
+    margin-left: 20px;
+    
+  }
+  #div-final {
+    margin-right: 90px;
+  }
+    #texto-final2 {
+      margin-left: 20px;
+    }
+
+  #logo-footer {
+    width: 55px;
+    margin-left: 60px;
+  }
+  #logo-whats {
+    width: 45px;
+    margin-left: 104px;
+  }
+  #mapa {
+    width: 45px;
+  }
+  .content .header-block {
+    height: 480px;
+  }
+  footer {
+    padding: 30px;
+  }
+  
+}
+
+@media screen and (max-width:1680px){
+  .header-block .text h2 {
+    margin-bottom: 128px;
+    font-size: 28px;
+    margin-left: 130px;
+  }
+  .header-block .text p {
+    max-width: 419px;
+    font-size: 20px;
+    margin-left: 300px;
+  }
+  .header-block img {
+    width: 36%;
+  }
+  .header-block .text {
+    bottom: 15%;
+    font-size: 20px;
+    left: 8%;
+  }
+  .brand {
+    font-size: 30px;
+    margin-left: 80px;
+  }
+  nav ul li {
+    padding: 25px;
+  }
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .description {
+    font-size: 22px;
+    width: 250px;
+    font-weight: 400;
+  }
+  footer {
+    padding: 30px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  #logo-footer {
+    width: 50px;
+    margin-top: -3px;
+  }
+  #logo-whats {
+    width: 38px;
+    margin-right: 20px;
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+  #texto-final2 {
+    margin-left: 30px;
+    margin-top: -3px;
+  }
+  #mapa {
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 0px;
+  }
+  #informacao {
+    margin-top: 7px;
+  }
+  #div-final {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (max-width:1440px){
+  footer p {
+    font-size: 15px;
+  }
+  .header-block .text {
+    font-size: 17px;
+  }
+  .header-block .text h2 {
+    margin-bottom: 140px;
+    font-size: 25px;
+  }
+  #texto-p {
+    font-size: 18px;
+  }
+  #tema-h2 {
+    font-size: 23px;
+  }
+  .description {
+    width: 225px;
+    font-size: 20px;
+  }
+  #informacao {
+    margin-top: 10px;
+  }
+  #div-final {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:1024px){
+
+    .header-block .text h2 {
+      margin-bottom: 180px;
+      font-size: 25px;
+      margin-left: 130px;
+      text-align: center;
+    }
+    .header-block .text p {
+      max-width: 419px;
+      font-size: 20px;
+      margin-left: 100px;
+      margin-bottom: -30px;
+    }
+    .text {
+      font-size: 17px;
+      bottom: 15%;
+    }
+    footer {
+      padding: 20px;
+    }
+    footer p {
+      font-size: 12px;
+      margin-left: 12px;
+    }
+    #mapa {
+      width: 30px;
+      margin-right: 29px;
+      margin-left: 9px;
+      margin-top: 5px;
+    }
+    #logo-whats {
+      width: 30px;
+      margin-right: 0px;
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    #logo-footer {
+      width: 38px;
+      margin-top: 0px;
+      margin-left: -3px;
+    }
+    #texto-final2 {
+      margin-top: 5px;
+      margin-left: -4px;
+    }
+    #informacao {
+      margin-top: 10px;
+    }
+    #div-final {
+      margin-top: 5px;
+      margin-right: 17px;
+      margin-left: -28px;
+    }
+    #tema-h2 {
+      font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px){
+  footer {
+    padding: 20px;
+  }
+  footer p {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  #div-final {
+    margin-top: 15px;
+    margin-right: -4px;
+  }
+  #texto-final2 {
+    margin-top: 14px;
+  }
+  #mapa {
+    margin-right: -10px;
+  }
+  #logo-whats {
+    margin-left: 10px;
+  }
+  .header-block h2 {
+    margin-bottom: 115px;
+  }
+  .text {
+    bottom: 19%;
+    left: 12%;
+  }
+  .header-block .text p {
+    max-width: 265px;
+    font-size: 16px;
+    text-align: none;
+  }
+  .header-block img {
+    right: 2%;
+    bottom: 10%;
+  }
+  .header-block .text h2 {
+    font-size: 21px;
+  }
+  .description{
+    font-size: 16px;
+    width: 185px;
+  }
+  #watch-price {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav ul li {
+    padding: 5px;
+  }
+  .brand {
+    font-size: 26px;
+    margin-left: 0;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  nav ul li a {
+    font-size: 13px;
+    padding: 9px 9px;
+  }
+  .header-block .text h2 {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 180px;
+    margin-left: 10px;
+  }
+  .header-block .text {
+    bottom: 35%;
+  }
+  .header-block img {
+    bottom: 33%;
+    width: 70%;
+    right: 17%;
+  }
+  .header-block .text p {
+    font-size: 16px;
+    margin-bottom: -66px;
+    text-align: center;
+    max-width: 100%;
+    margin-left: 10px;
+  }
+  .description {
+    font-size: 18px;
+    width: 200px;
+  }
+  footer {
+      padding: 20px;
+      column-count:auto ;
+  }
+  footer p {
+    font-size: 13px;
+    margin-left: -14px;
+  }
+  footer small {
+    font-size: 90%;
+  }
+  #logo-footer {
+    width: 40px;
+    float: left;
+    height: auto;
+  }
+  #texto-final2 {
+    margin-top: -40px;
+    width: 80%;
+    float: right;
+    margin-left: 65px;
+  }
+  #logo-whats {
+    margin-left: 0;
+    width: 35px;
+    height: auto;
+    margin-top: 19px;
+    margin-right: 0px;
+  }
+  #informacao {
+    margin-top: 27px;
+    margin-left: 20px;
+    margin-right: 159px;
+    float: right;
+  }
+  #mapa {
+    margin-right: 0px;
+    margin-left: -35px;
+    width: 35px;
+    margin-top: 72px;
+    float: left;
+    height: auto;
+  }
+  #div-final {
+    margin-top: 28px;
+    width: 70%;
+    float: left;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width:390px){
+  nav ul li a {
+    font-size: 12px;
+      padding: 7px 5px;
+  }
+  .description {
+    font-size: 15px;
+    width: 170px;
+  }
+  .header-block .text h2 {
+    font-size: 22px;
+    margin-bottom: 180px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .header-block .text p {
+    margin-bottom: -70px;
+    margin-left: 35px;
+  }
+  .header-block .text {
+    text-align: center;
+  }
+  .header-block img {
+    bottom: 32%;
+    width: 70%;
+    right: 15%;
+  }
+  .arrow {
+    margin: 0px 5px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  #texto-final2 {
+    margin-left: 50px;
+    margin-right: -9px;
+  }
+  #informacao {
+    margin-right: 130px;
+  }
+  #div-final {
+    margin-left: 36px;
+  }
+  
+}
+
+@media screen and (max-width:320px){
+  nav ul li a {
+    font-size: 12px;
+      padding: 7px 5px;
+  }
+  .description {
+    font-size: 15px;
+    width: 170px;
+  }
+  .header-block .text h2 {
+    font-size: 22px;
+    margin-bottom: 180px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .header-block .text p {
+    margin-bottom: -66px;
+    margin-left: 35px;
+  }
+  .header-block .text {
+    text-align: center;
+  }
+  .header-block img {
+    bottom: 38%;
+    width: 70%;
+    right: 17%;
+  }
+  .arrow {
+    margin: 0px 5px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  #texto-final2 {
+    margin-left: 50px;
+    margin-right: -19px;
+  }
+  #informacao {
+    margin-right: 76px;
+  }
+  
+}

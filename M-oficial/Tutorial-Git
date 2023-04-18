@@ -1,0 +1,33 @@
+
+# Git
+- versionadores de código: organizar, e dividir os códigos.
+- 
+- 
+
+## Repositório
+- clonar seu projeto + commit =+ repositório
+- pull = puxar + commit =+ repositório
+-
+
+## Pull Request
+- Merge: Colocar a atualização no Repositório Oficial
+- No Git Hub depois que vc fez uma brench no sue pc e enviou ao git lá tem a opção pull Request que onde será realizado uma verificação do admin e depois se ele quiser será implementado no projeto oficial
+-
+
+## Commit
+- git add *
+- git commit -m "Mensagem"
+- git push (enviou)
+
+## Git Status
+- Git Status (verifica se tem algo no seu repositorio que não tem no do github)
+
+## Branch
+- git checkout -b Nome-da-brench
+- cria outras versões
+- git branch -M main
+
+## Git Pull
+- Baixar as atualizações do código do github
+
+##  
